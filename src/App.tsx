@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
-import { Header } from "./views/header/header";
+import { HeaderDisplay } from "./views/header";
+import { MainLinkDisplay } from "./views/body/body";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <div className={"App"}>
+      <HeaderDisplay />
+      <MainLinkDisplay />
     </div>
   );
 }

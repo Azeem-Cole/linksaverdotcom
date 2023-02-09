@@ -1,0 +1,38 @@
+.LinkCardContainer {
+  display: inline-block;
+  padding-inline-start: 0px;
+  margin: 0;
+}
+
+.LinkCard {
+  padding: 10px;
+  background-color: #aee2ff;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.LinkDataTable {
+  border: 1px solid black;
+  max-width: inherit;
+}
+
+.LinkDataTable > tr > td {
+  word-wrap: break-word;
+  border: 1px solid red;
+}
+
+.Column2 > p > a {
+  height: 100px;
+  word-wrap: break-word;
+}
+
+.LinkInfo {
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
+.LinkName {
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+}

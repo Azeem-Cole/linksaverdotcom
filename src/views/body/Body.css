@@ -1,0 +1,27 @@
+.AddLinkForm {
+  display: inline-block;
+}
+
+.AddLinkForm > input {
+  border: 0px;
+  display: block;
+  margin: 10px auto 10px auto;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.AddLinkForm > input:checked {
+  border: 0px;
+}
+
+input[type="submit"]:hover {
+  background: #007cc2;
+  cursor: pointer;
+}
+
+.HorizontalRule{
+    max-width: 1000px;
+    border: 1px solid black;
+}

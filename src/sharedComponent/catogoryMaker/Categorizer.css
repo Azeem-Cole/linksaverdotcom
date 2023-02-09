@@ -1,0 +1,9 @@
+.CategoryContainer {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.CategorizerOptions {
+  margin: 3px 2px 3px 2px;
+  display:inline-flex
+}
