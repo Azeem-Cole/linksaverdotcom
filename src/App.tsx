@@ -4,6 +4,7 @@ import { HeaderDisplay } from "./views/header";
 import { MainLinkDisplay } from "./views/body/body";
 
 function App() {
+
   return (
     <div className={"App"}>
       <HeaderDisplay />

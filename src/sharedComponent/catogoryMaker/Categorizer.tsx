@@ -7,19 +7,35 @@ type catergoryDisplayType = {
 };
 
 const Catergorizer = ({ linkList }: catergoryDisplayType) => {
+  const counts = {};
+
+  linkList.forEach(function (x) {
+    counts[x.site] = (counts[x.site] || 0) + 1;
+  });
+
+  const length = Object.keys(counts).length;
+
+  var count = 0;
+  const linkCountlist = Object.entries(counts).map(([key, value]) => {
+    count++;
+
+    return (
+      <div className="CategorizerOptions" key={key + value + count}>
+        <div>
+          <a href={key} target="_blank" rel="noopener noreferrer">
+            {`${key} (${value})`}
+          </a>
+        </div>
+
+        {count !== length && <>&nbsp; | &nbsp;</>}
+      </div>
+    );
+  });
+
   return (
     <div className="CategoryContainer">
       <div>Top Sites Saved</div>
-      {linkList?.map((link, index) => (
-        <div className="CategorizerOptions" key={link.site + index}>
-          <div>
-            <a href={link.url} target="_blank" rel="noopener noreferrer">
-              {link.site}
-            </a>
-          </div>
-          <>&nbsp; | &nbsp;</>
-        </div>
-      ))}
+      {linkCountlist}
     </div>
   );
 };

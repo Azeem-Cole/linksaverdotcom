@@ -20,40 +20,42 @@ const LinkCard = ({ url, name, dateAdded, site, siteCount }: LinkCardType) => {
       </p>
 
       <table className="LinkDataTable" cellPadding="0" cellSpacing="0">
-        <tr>
-          <td className="Column1">Link</td>
-          <td className="Column2">
-            <p className="LinkInfo LinkUrl">
-              <a href={url} target="_blank" rel="noopener noreferrer">
-                {url}
-              </a>
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td className="Column1">Date Added</td>
-          <td className="Column2">
-            <p className="LinkInfo LinkDate">{String(date[0])}</p>
-          </td>
-        </tr>
-        <tr>
-          <td className="Column1"> Site </td>
-          <td className="Column2">
-            <p className="LinkInfo LinkSite">
-              You have {siteCount} from&nbsp;
-              {
-                <a href={site} target="_blank" rel="noopener noreferrer">
-                  {site}
+        <tbody>
+          <tr>
+            <td className="Column1">Link</td>
+            <td className="Column2">
+              <p className="LinkInfo LinkUrl">
+                <a href={url} target="_blank" rel="noopener noreferrer">
+                  {url}
                 </a>
-              }
-            </p>
-          </td>
-        </tr>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td className="Column1">Date Added</td>
+            <td className="Column2">
+              <p className="LinkInfo LinkDate">{String(date[0])}</p>
+            </td>
+          </tr>
+          <tr>
+            <td className="Column1"> Site </td>
+            <td className="Column2">
+              <p className="LinkInfo LinkSite">
+                You have {siteCount} from&nbsp;
+                {
+                  <a href={site} target="_blank" rel="noopener noreferrer">
+                    {site}
+                  </a>
+                }
+              </p>
+            </td>
+          </tr>
+        </tbody>
       </table>
 
       <div>
         <button className="button">Edit</button>
-        <button className="button">add to folder</button>
+        <button className="button">Add to Folder</button>
         <button className="button">Copy</button>
         <button className="button">Delete</button>
       </div>
