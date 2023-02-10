@@ -19,9 +19,9 @@ const LinkCard = ({ url, name, dateAdded, site, siteCount }: LinkCardType) => {
         </a>
       </p>
 
-      <table className="LinkDataTable">
+      <table className="LinkDataTable" cellPadding="0" cellSpacing="0">
         <tr>
-          <td>Link</td>
+          <td className="Column1">Link</td>
           <td className="Column2">
             <p className="LinkInfo LinkUrl">
               <a href={url} target="_blank" rel="noopener noreferrer">
@@ -31,14 +31,14 @@ const LinkCard = ({ url, name, dateAdded, site, siteCount }: LinkCardType) => {
           </td>
         </tr>
         <tr>
-          <td>Date Added</td>
-          <td>
+          <td className="Column1">Date Added</td>
+          <td className="Column2">
             <p className="LinkInfo LinkDate">{String(date[0])}</p>
           </td>
         </tr>
         <tr>
-          <td> Site </td>
-          <td>
+          <td className="Column1"> Site </td>
+          <td className="Column2">
             <p className="LinkInfo LinkSite">
               You have {siteCount} from&nbsp;
               {
@@ -50,12 +50,13 @@ const LinkCard = ({ url, name, dateAdded, site, siteCount }: LinkCardType) => {
           </td>
         </tr>
       </table>
-      <>
-        <button>Edit</button>
-        <button>add to folder</button>
-        <button>Copy</button>
-        <button>Delete</button>
-      </>
+
+      <div>
+        <button className="button">Edit</button>
+        <button className="button">add to folder</button>
+        <button className="button">Copy</button>
+        <button className="button">Delete</button>
+      </div>
     </>
   );
 };

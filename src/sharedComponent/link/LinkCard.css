@@ -1,38 +1,52 @@
-.LinkCardContainer {
+.MainLinkArea {
   display: inline-block;
+}
+
+.LinkCardContainer {
   padding-inline-start: 0px;
   margin: 0;
+  max-width: 800px;
 }
 
 .LinkCard {
-  padding: 10px;
+  padding: 10px 50px 10px 50px;
   background-color: #aee2ff;
   margin-bottom: 10px;
   border-radius: 20px;
 }
+
+.LinkName {
+  margin: 0 0 10px 0;
+}
+
 .LinkDataTable {
-  border: 1px solid black;
-  max-width: inherit;
+  width: 100%;
 }
 
 .LinkDataTable > tr > td {
-  word-wrap: break-word;
-  border: 1px solid red;
+  text-align: left;
 }
 
-.Column2 > p > a {
-  height: 100px;
-  word-wrap: break-word;
-}
-
-.LinkInfo {
-  width: fit-content;
-  margin: 0;
+.LinkDataTable > tr > td > p {
+  margin: 2px;
   padding: 0;
 }
 
-.LinkName {
-  text-align: center;
-  width: 100%;
-  font-size: 25px;
+.Column1 {
+  width: 100px;
+}
+.Column2 {
+  word-break: break-all;
+}
+.Column2 > p,
+.Column2 > p > a {
+  text-align: left;
+}
+
+.button {
+  padding: 10px;
+  margin: 5px;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 16px;
 }
