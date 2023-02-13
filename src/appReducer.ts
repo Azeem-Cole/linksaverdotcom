@@ -1,12 +1,12 @@
 const appReducer = function (state = 0, action: { type: any }) {
   switch (action.type) {
-    case "a":
+    case "add10":
       return state + 10;
 
-    case "b":
+    case "sub10":
       return state - 10;
-    case "c":
-      return state / 2;
+    case "div10":
+      return state / 10;
 
     default:
       return state;

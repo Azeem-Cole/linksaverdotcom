@@ -2,9 +2,9 @@ export const mapDispatchToProps = (
   dispatch: (arg0: { type: string }) => any
 ) => {
   return {
-    aa: () => dispatch({ type: "a" }),
-    bb: () => dispatch({ type: "b" }),
-    cc: () => dispatch({ type: "c" }),
+    add10: () => dispatch({ type: "add10" }),
+    sub10: () => dispatch({ type: "sub10" }),
+    div10: () => dispatch({ type: "div10" }),
   };
 };
 
