@@ -4,7 +4,7 @@ import { mapDispatchToProps, mapStateToProps } from "../../actions/bodyAction";
 import "./Body.css";
 
 const _MainLinkDisplay = ({ count, add, sub, mul }) => {
-  const counter = count["newbodyReducer"];
+  const counter = count["bodyReducer"];
 
   return (
     <div>

@@ -1,15 +1,15 @@
 export const mapDispatchToProps = (
-  dispatch: (arg0: { type: string }) => any
+  dispatch: (item: { type: string; payload:{} }) => any
 ) => {
   return {
-    add10: () => dispatch({ type: "add10" }),
-    sub10: () => dispatch({ type: "sub10" }),
-    div10: () => dispatch({ type: "div10" }),
+    add10: () => dispatch({ type: "add10", payload: {} }),
+    sub10: () => dispatch({ type: "sub10", payload: {} }),
+    div10: () => dispatch({ type: "div10", payload: {} }),
   };
 };
 
 export const mapStateToProps = (state: any) => {
   return {
-    newcount: state,
+    state,
   };
 };
