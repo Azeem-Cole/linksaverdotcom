@@ -2,10 +2,9 @@ const appReducer = function (
   state = 0,
   action: { type: any; payload: { color: string } }
 ) {
+  console.log( action.payload )
   switch (action.type) {
     case "add10":
-      console.log(action);
-      console.log(action.payload);
       return state + 10;
 
     case "sub10":
