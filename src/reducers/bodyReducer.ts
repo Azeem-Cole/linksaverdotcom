@@ -13,4 +13,4 @@ const bodyReducer = function (state = 0, action: { type: any }) {
   }
 };
 
-export default bodyReducer;
+export { bodyReducer };

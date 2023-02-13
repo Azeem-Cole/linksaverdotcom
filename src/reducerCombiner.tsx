@@ -1,9 +1,10 @@
-import bodyReducer from "./reducers/bodyReducer";
-
+import { bodyReducer } from "./reducers/bodyReducer";
+import { appReducer } from "./appReducer";
 import { combineReducers } from "redux";
 
 const rootReducer = combineReducers({
-  bodyReducer,
+  newbodyReducer: bodyReducer,
+  newappReducer: appReducer,
 });
 
 export { rootReducer };
