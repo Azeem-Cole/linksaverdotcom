@@ -1,14 +1,9 @@
+import bodyReducer from "./reducers/bodyReducer";
 
-const rootReducer = function (state = 0, action) {
-  switch (action.type) {
-    case "add":
-      return state + 1;
+import { combineReducers } from "redux";
 
-    case "sub":
-      return state - 1;
-    default:
-      return state;
-  }
-};
+const rootReducer = combineReducers({
+  bodyReducer,
+});
 
 export { rootReducer };
