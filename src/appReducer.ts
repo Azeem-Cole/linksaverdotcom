@@ -1,16 +1,16 @@
-const appReducer = function (
-  state = 0,
-  action: { type: any; payload: { color: string } }
-) {
-  console.log( action.payload )
-  switch (action.type) {
-    case "add10":
-      return state + 10;
+const initialUserState = {
+  arr: [] as any,
+};
 
-    case "sub10":
-      return state - 10;
-    case "div10":
-      return state / 10;
+const appReducer = function (
+  state = initialUserState,
+  action: { type: any; payload: { color: string; number: number } }
+) {
+  console.log(action);
+
+  switch (action.type) {
+    case "link10":
+      return { ...state, arr: [...state.arr, action.payload] };
 
     default:
       return state;
